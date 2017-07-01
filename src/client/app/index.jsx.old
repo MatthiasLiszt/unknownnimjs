@@ -1,0 +1,64 @@
+import React from 'react';
+import {render} from 'react-dom';
+
+const empty="empty.png";
+
+let gameBoard=Array(16).fill('0');
+
+class Field extends React.Component {
+  constructor(props){
+    super(props);
+  
+  }
+  render() {
+    if(this.props.s=='0')
+     {return <img className="field" id={this.props.key} src={empty} alt="_" s={this.props.s}/>;}
+    else
+     {return <p>error!</p>;} 
+   } 
+
+}
+
+
+class PlayField extends React.Component {
+  
+  constructor(props){
+   super(props);
+   this.state={board: this.props.board};
+  }
+  render() {
+    let board=this.state.board;
+    let keyIndex=-1;
+    const playField=board.map(function(){
+                                let key="field"+keyIndex;
+                                ++keyIndex;
+                                //console.log(key);
+                                return <Field id={key} s={board[keyIndex]}/> 
+                                                            
+                              });
+    return <div className="playField">{playField}</div>;
+    
+   } 
+
+}
+
+
+class App extends React.Component {
+  
+  constructor(props){
+   super(props);
+   let initBoard=Array(16).fill('0');
+   this.state={pboard: initBoard };
+  } 
+   
+  render () {
+    const hl = <p className="hl"> Unknown Abandoned Nim Variation </p>;
+    const playField=<PlayField board={this.state.pboard}/>;  
+    //let i=JSON.stringify(this.state.pboard);
+    return <div className="app">{hl}{playField}</div>;
+  }
+}
+
+render(<App/>, document.getElementById('app'));
+
+

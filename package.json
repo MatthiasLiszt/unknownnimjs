@@ -1,0 +1,35 @@
+{
+  "name": "unknownnimvariation",
+  "version": "1.0.0",
+  "description": "unknown two dimensional nim variation with react.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "build" : "webpack -p",
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthiasLiszt/unknownnimjs.git"
+  },
+  "keywords": [
+    "unknown",
+    "nim",
+    "variation",
+    "react.js"
+  ],
+  "author": "MatthiasLiszt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthiasLiszt/unknownnimjs/issues"
+  },
+  "homepage": "https://github.com/MatthiasLiszt/unknownnimjs#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.0.0"
+  }
+}
