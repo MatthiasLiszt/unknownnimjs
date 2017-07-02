@@ -18,3 +18,8 @@
 .hl{
  text-align: center;
 }
+
+.bline{
+ text-align: center;
+ float: left;
+}
