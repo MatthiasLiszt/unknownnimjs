@@ -1,0 +1,55 @@
+.field{
+  height: 25%;
+  width: 25%;
+  font-size: 25%;
+  padding: 5% 5%;
+  float: right; 
+  background-color: grey;
+}
+
+.xfield{
+  height: 25%;
+  width: 25%;
+  font-size: 25%;
+  padding: 5% 5%;
+  float: right; 
+  background-color: blue;
+}
+
+.ofield{
+  height: 25%;
+  width: 25%;
+  font-size: 25%;
+  padding: 5% 5%;
+  float: right; 
+  background-color: green;
+}
+
+.efield{
+  height: 25%;
+  width: 25%;
+  font-size: 25%;
+  padding: 5% 5%;
+  float: right; 
+  background-color: red;
+}
+
+.playField{
+  text-align: center;
+  height: 60%;
+  width: 60%;
+  background-color: powderblue;
+}
+
+.app{
+ text-align: center;
+}
+
+.hl{
+ text-align: center;
+}
+
+.bline{
+ text-align: center;
+ float: left;
+}
